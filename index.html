@@ -199,28 +199,28 @@
                             <path id="Vector" d="M23.14 8.09C16.04 10.58 10.34 16.06 7.54 23.01C7.3 22.83 7.06 22.65 6.84 22.45C5.18 20.53 4.18 18.03 4.18 15.29C4.18 9.24 9.09 4.32 15.15 4.32C17.88 4.32 20.38 5.32 22.31 6.98C22.61 7.33 22.89 7.7 23.14 8.09L23.14 8.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
                         </g>
                     </svg>
-                    <Span>5500</Span> Bdt</p>
+                    <Span id="amount">5500</Span> Bdt</p>
             </div>
         </nav>
 
         <!-- Navbar section end -->
     </header>
-    <main class=" w-11/12 mx-auto color-secondary  pt-5 sm:pt-10 mb-10">
+    <main class=" w-11/12 mx-auto color-secondary  mb-10">
         <!-- button section -->
-        <section class="color-secondary">
+        <section class="color-secondary py-8">
             <div class="flex gap-4 justify-center items-center">
-                <button class="btn btn-color-primary px-9">Donation</button>
-                <button class="btn px-9">History</button>
+                <button id="main-btn" class="btn btn-color-primary px-12">Donation</button>
+                <button id="history-btn" class="btn px-12">History</button>
             </div>
         </section>
         <!-- button section end -->
         <!-- card section start  -->
-        <section class="">
+        <section id="card-container" class="hidden">
             <!-- card 1 -->
             <div class=" sm:w-11/12 mx-auto hero bg-base-200 h-auto px-5 py-5 sm:py-5 color-secondary rounded-xl border-2 border-gray-100 mt-5 sm:mt-10">
                 <div class="flex flex-col-reverse  lg:flex-row-reverse gap-10">
                   <div class="text-center lg:text-left  space-y-4"> 
-                    <button class="btn">
+                    <button  class="btn">
                         <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <desc>
                                     Created with Pixso.
@@ -283,13 +283,13 @@
                                 <path id="Vector" d="M23.14 8.09C16.04 10.58 10.34 16.06 7.54 23.01C7.3 22.83 7.06 22.65 6.84 22.45C5.18 20.53 4.18 18.03 4.18 15.29C4.18 9.24 9.09 4.32 15.15 4.32C17.88 4.32 20.38 5.32 22.31 6.98C22.61 7.33 22.89 7.7 23.14 8.09L23.14 8.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
                             </g>
                         </svg>
-                        0 BDT</button>
+                        <span id="card-btn-1">0</span> BDT</button>
                     <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="font-light text-base">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
-                    <button class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
+                    <input id="donation-input-1" type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
+                    <button id="donation-amount" class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
 
                   </div>
                   <div class="card bg-base-100 w-auto h-full shrink-0 shadow-2xl">
@@ -364,13 +364,13 @@
                                 <path id="Vector" d="M23.14 8.09C16.04 10.58 10.34 16.06 7.54 23.01C7.3 22.83 7.06 22.65 6.84 22.45C5.18 20.53 4.18 18.03 4.18 15.29C4.18 9.24 9.09 4.32 15.15 4.32C17.88 4.32 20.38 5.32 22.31 6.98C22.61 7.33 22.89 7.7 23.14 8.09L23.14 8.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
                             </g>
                         </svg>
-                        600 BDT</button>
+                        <span id="card-btn-2">600 </span>BDT</button>
                     <h2 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="font-light text-base">
                         The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <input type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
-                    <button class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
+                    <input id="donation-input-2" type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
+                    <button id="donation-amount-card-2" class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
 
                   </div>
                   <div class="card bg-base-100 w-auto h-full shrink-0 shadow-2xl">
@@ -445,13 +445,13 @@
                                 <path id="Vector" d="M23.14 8.09C16.04 10.58 10.34 16.06 7.54 23.01C7.3 22.83 7.06 22.65 6.84 22.45C5.18 20.53 4.18 18.03 4.18 15.29C4.18 9.24 9.09 4.32 15.15 4.32C17.88 4.32 20.38 5.32 22.31 6.98C22.61 7.33 22.89 7.7 23.14 8.09L23.14 8.09Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
                             </g>
                         </svg>
-                        2400 BDT</button>
+                        <span id="card-btn-3">2400</span> BDT</button>
                     <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                     <p class="font-light text-base">
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <input type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
-                    <button class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
+                    <input id="donation-input-3" type="text" placeholder="With Donation amount" class="input input-bordered w-full " />
+                    <button id="donation-amount-card-3" class="btn w-full btn-color-primary hover:bg-[#B4F461]">Donate now</button>
 
                   </div>
                   <div class="card bg-base-100 w-auto h-full shrink-0 shadow-2xl">
@@ -462,10 +462,25 @@
         </section>
         <!-- card section end -->
 
+        <!-- History section -->
+        <section id="history-container" class="hidden">
+             <!-- card section start  -->
+            <section class=" sm:w-10/12 mx-auto my-5 px-5 py-5 text-left space-y-3 border-2 border-gray-300 rounded-2xl">
+               <h2 class="font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+               <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </section>
+            <!-- card section end -->
+    
+        </section>
+
     </main>
-
-
+    <script src="script/utilits.js"></script>
+    <script src="script/card-1.js"></script>
+    <script src="script/card-2.js"></script>
+    <script src="script/card-3.js"></script>
+    
     <script src="script/main.js"></script>
+
 </body>
 
 </html>
