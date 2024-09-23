@@ -24,6 +24,16 @@ getDonation('donation-amount-card-3').addEventListener('click',function(){
             document.getElementById('amount').innerText = newAmount ;
             document.getElementById('card-btn-3').innerText =inputValue + cardTwo; 
             document.getElementById('donation-input-3').value = '';
+            const historyContainer =document.getElementById('history-container');
+            const container =document.createElement('div');
+
+           container.className='sm:w-10/12 mx-auto my-5 px-5 py-5 text-left space-y-3 border-2 border-gray-300 rounded-2xl'
+
+           container.innerHTML=`
+           <h2 class="font-bold"><span>${inputValue}</span> Taka is Donated for famine-2024 at Quota Movement, Bangladesh</h2>
+           <p>Date :${new Date().toLocaleString()}</p>
+           `
+           historyContainer.insertBefore(container ,historyContainer.firstChild);
         }
         
 

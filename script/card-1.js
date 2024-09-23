@@ -24,17 +24,15 @@ getDonation('donation-amount').addEventListener('click',function(){
             document.getElementById('card-btn-1').innerText =inputValue; 
             document.getElementById('donation-input-1').value = '';
             const historyContainer =document.getElementById('history-container');
-            historyContainer.innerHTML=
-            `
-            
-            <section class=" sm:w-10/12 mx-auto my-5 px-5 py-5 text-left space-y-3 border-2 border-gray-300 rounded-2xl">
-               <h2 class="font-bold"><span>${inputValue}</span> Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-               <p>Date :${new Date().toLocaleString()}</p>
-            </section>
-            
-            
-            `
+            const container =document.createElement('div');
 
+           container.className='sm:w-10/12 mx-auto my-5 px-5 py-5 text-left space-y-3 border-2 border-gray-300 rounded-2xl'
+
+           container.innerHTML=`
+           <h2 class="font-bold"><span>${inputValue}</span> Taka is Donated for famine-2024 at Noakhali, Bangladesh</h2>
+           <p>Date :${new Date().toLocaleString()}</p>
+           `
+           historyContainer.insertBefore(container ,historyContainer.firstChild);
         }
         
 

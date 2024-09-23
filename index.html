@@ -25,11 +25,11 @@
 
 <body class="color-primary sm:w-11/12 border-2 border-cyan-300 mx-auto text-center font-primary" >
     
-    <header class="md:w-11/12 mx-auto text-center px-2 sm:px-4 py-3 sm:py-6 sm:pb-8">
+    <header class="md:w-11/12 mx-auto text-center px-2 sm:px-4 py-3 sm:py-6 sm:pb-8 sticky top-0 z-10  backdrop-filter backdrop-blur dark:bg-primary">
         <!-- Navbar section start  -->
          
-        <nav class="flex justify-between items-center text-sm md:text-xl ">
-            <button class="btn md:px-10 btn-color-primary font-semibold">Blog</button>
+        <nav class=" dark:text-white flex justify-between items-center text-sm md:text-xl ">
+            <button id="nav-btn" class="btn md:px-10 btn-color-primary font-semibold"><span id="bt-text">Blog</span></button>
             <div class="flex items-center justify-center gap-1">
                 <svg class="hidden sm:block" width="48.000000" height="48.000000" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -205,7 +205,7 @@
 
         <!-- Navbar section end -->
     </header>
-    <main class=" w-11/12 mx-auto color-secondary  mb-10">
+    <main class=" w-11/12 mx-auto color-secondary  mb-10 z-0">
         <!-- button section -->
         <section class="color-secondary py-8">
             <div class="flex gap-4 justify-center items-center">
@@ -215,7 +215,7 @@
         </section>
         <!-- button section end -->
         <!-- card section start  -->
-        <section id="card-container" class="">
+        <section id="card-container" class="hidden">
             <!-- card 1 -->
             <div class=" sm:w-11/12 mx-auto hero bg-base-200 h-auto px-5 py-5 sm:py-5 color-secondary rounded-xl border-2 border-gray-100 mt-5 sm:mt-10">
                 <div class="flex flex-col-reverse  lg:flex-row-reverse gap-10">
@@ -374,7 +374,7 @@
 
                   </div>
                   <div class="card bg-base-100 w-auto h-full shrink-0 shadow-2xl">
-                    <img src="assets/noakhali.png" alt="">
+                    <img src="assets/feni.png" alt="">
                   </div>
                 </div>
             </div>
@@ -455,28 +455,21 @@
 
                   </div>
                   <div class="card bg-base-100 w-auto h-full shrink-0 shadow-2xl">
-                    <img src="assets/noakhali.png" alt="">
+                    <img src="assets/quota-protest.png" alt="">
                   </div>
                 </div>
             </div>
         </section>
-        <!-- card section end -->
-
-        <!-- History section -->
         <section id="history-container" class="hidden">
-             <!-- card section start  -->
-            
-            <!-- card section end -->
-    
         </section>
 
     </main>
-    <script src="script/main.js"></script>
+    
     <script src="script/utilits.js"></script>
     <script src="script/card-1.js"></script>
     <script src="script/card-2.js"></script>
     <script src="script/card-3.js"></script>
-    
+    <script src="script/main.js"></script>
     
 
 </body>

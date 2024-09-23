@@ -29,7 +29,7 @@
         <!-- Navbar section start  -->
          
         <nav class="flex justify-between items-center text-sm md:text-xl ">
-            <button class="btn md:px-10 btn-color-primary font-semibold">Blog</button>
+            <button id="home-btn" class="btn md:px-10 btn-color-primary font-semibold"><span id="btn-text">Home</span></button>
             <div class="flex items-center justify-center gap-1">
                 <svg class="hidden sm:block" width="48.000000" height="48.000000" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -207,24 +207,45 @@
     </header>
     <section class=" w-11/12 mx-auto color-secondary  pt-5 pb-3 sm:pt-10 mb-10">
         <!-- button section -->
-        <section class="color-secondary">
-            <div class="flex gap-4 justify-center items-center">
-                <button class="btn btn-color-primary px-9">Donation</button>
-                <button class="btn px-9">History</button>
+        
+
+        <section class=" space-y-4 w-10/12 mx-auto py-10">
+            <div class="text-left pb-3 sm:pb-6">
+                <h2 class="font-bold text-2xl sm:text-4xl">Important FAQ <i class="fa-solid fa-circle-question"></i></h2>
             </div>
+            <div class="collapse bg-base-200 text-left  bg-transparent border-2 border-gray-200">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is dom?</div>
+                <div class="collapse-content">
+                  <p>The DOM is a programming interface that represents the structure of a document (usually HTML or XML) as a tree of objects. It allows developers to manipulate the content, structure, and style of a document programmatically.</p>
+                </div>
+              </div>
+              
+              <div class="collapse bg-base-200 text-left  bg-transparent border-2 border-gray-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">How can I manipulate DOM elements with JavaScript?</div>
+                <div class="collapse-content">
+                  <p>You can manipulate DOM elements using methods like getElementById(), querySelector(), appendChild(), removeChild(), and setAttribute(). These methods allow you to select, modify, or remove elements from the DOM.</p>
+                </div>
+              </div>
+              
+              <div class="collapse bg-base-200 text-left bg-transparent border-2 border-gray-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">What are event listeners, and how do I use them?</div>
+                <div class="collapse-content">
+                  <p>Event listeners are functions that wait for specific events (like clicks or key presses) to occur on DOM elements. You can add an event listener using addEventListener(event, handler), where event is the type of event (e.g., "click") and handler is the function to be executed when the event occurs.</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200 text-left bg-transparent border-2 border-gray-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">What is the difference between innerHTML and textContent?</div>
+                <div class="collapse-content">
+                  <p>innerHTML allows you to get or set HTML content within an element, meaning it can include HTML tags. In contrast, textContent retrieves or sets the text content of an element, stripping out any HTML tags and only returning plain text.</p>
+                </div>
+              </div>
+              <input type="text" placeholder="Type your question?" class="input input-bordered  w-full py-8" />
         </section>
-        <!-- button section end -->
-        <!-- card section start  -->
-        <section class=" sm:w-10/12 mx-auto my-5 px-5 py-5 text-left space-y-3 border-2 border-gray-300 rounded-2xl">
-           <h2 class="font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-           <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-        </section>
-        <!-- card section end -->
-
-    </section>
-
-
-    <script src="script/main.js"></script>
+    <script src="script/path.js"></script>
 </body>
 
 </html>
