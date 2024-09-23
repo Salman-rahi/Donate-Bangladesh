@@ -3,7 +3,11 @@
    }
 
 .color-primary{
-    background-color:rgb(249, 247, 243);;
+    background-color: rgb(249, 247, 243);;;
+}
+
+.color-secondary{
+    background-color:rgb(255, 255, 255);;
 }
 
 .btn-color-primary{
