@@ -1,4 +1,5 @@
-getDonation('main-btn').addEventListener('click',function(){
+getDonation('main-btn').addEventListener('click',function(event){
+    
     const mainBtn =getDonation('main-btn');
     const historyBtn =getDonation('history-btn');
     const cardContainer = getDonation('card-container');
@@ -26,7 +27,7 @@ getDonation('history-btn').addEventListener('click',function(){
 })
 
 
-document.getElementById('nav-btn').addEventListener('click', function(){
-    window.location.href ='../blog.html';
-})
+// document.getElementById('nav-btn').addEventListener('click', function(){
+//     window.location.href ='../blog.html';
+// })
 
