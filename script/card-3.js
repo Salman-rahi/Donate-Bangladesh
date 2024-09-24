@@ -34,8 +34,19 @@ getDonation('donation-amount-card-3').addEventListener('click',function(){
            <p>Date :${new Date().toLocaleString()}</p>
            `
            historyContainer.insertBefore(container ,historyContainer.firstChild);
+           const modal =document.getElementById('modal');
+           modal.classList.remove('hidden');
+           const cardContainer = document.getElementById('card-container');
+           cardContainer.classList.add('blur-md');
         }
         
 
     }
+})
+
+document.getElementById('modal-btn').addEventListener('click',function(){
+    const modal =document.getElementById('modal');
+    modal.classList.add('hidden');
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.classList.remove('blur-md');
 })
